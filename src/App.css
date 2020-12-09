@@ -24,12 +24,14 @@
 }
 
 
-.user__wrapper{
+.app_wrapper{
     display: flex;
     flex-direction: row;
 }
 
-
+.app_content{
+    width: 80%;
+}
 
 
 

@@ -1,0 +1,10 @@
+.dialogs{
+    display: flex;
+
+}
+.dialog_item{
+    width: 50%;
+}
+.messages{
+    width: 50%;
+}

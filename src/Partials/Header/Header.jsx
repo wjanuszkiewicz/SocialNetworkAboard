@@ -1,12 +1,14 @@
 import React from 'react';
-import HeaderClasses from './Header.module.css';
+import Snc from './Header.module.css';
+import Friends from "../Friends/Friends";
 
-const Header = () => {
+const Header = (props) => {
     return(
-        <header className={HeaderClasses.header}>
-            <a href="#" className ={HeaderClasses.logo__button}>
+        <header className={Snc.header}>
+            <a href="#" className ={Snc.logo__button}>
                  Aboard
             </a>
+
         </header>
     );
 }

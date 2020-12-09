@@ -6,7 +6,7 @@
     background-color: #201928;
     width: 10%;
     height: 100vh;
-    border-right: 5px solid #37323f;
+    border-left: 5px solid #37323f;
 }
 
 .app_nav__item{
@@ -16,7 +16,7 @@
 }
 .app_nav__item:hover{
     background-color: rgb(0%, 50%, 53%, .5);
-    transform: translate(5px, 0px);
+    transform: translate(-5px, 0px);
     border-bottom: 0;
     transition: border-bottom 0.5s, transform .5s, background-color 1s;
 }
@@ -30,6 +30,7 @@
     font-family: ExoMedium;
 
 }
+
 .nav_icons {
     max-width: 40px;
     max-height: 40px;
