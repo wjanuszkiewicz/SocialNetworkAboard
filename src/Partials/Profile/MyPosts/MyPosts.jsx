@@ -1,7 +1,6 @@
 import React from 'react';
 import Snc from './MyPosts.module.css';
 import Post from './Posts/Post';
-import {addPostActionCreator, onPostChangeActionCreator} from "../../../Redux/profileReducer";
 
 
 const MyPosts = (props) => {
@@ -11,13 +10,13 @@ const MyPosts = (props) => {
     let newPostText = React.createRef();
 
 
-    let addPost = () => {
-        props.dispatch(addPostActionCreator());
+    let onAddPost = () => {
+        props.addNewPost();
     }
 
-    let onPostChange = () => {
+    let onNewPostChange = () => {
         let postContent = newPostText.current.value;
-        props.dispatch(onPostChangeActionCreator(postContent))
+        props.updatePostChange(postContent);
     }
 
 
@@ -25,8 +24,8 @@ const MyPosts = (props) => {
         <div className={Snc.profile_posts}>
             My Posts
             <div>
-                <textarea onChange={onPostChange} ref={newPostText} value={props.newPostElement.newPostTextElement}/>
-                <button onClick={addPost}>Add post</button>
+                <textarea onChange={onNewPostChange} ref={newPostText} value={props.newPostTextElement}/>
+                <button onClick={onAddPost}>Add post</button>
             </div>
             <div className={Snc.posts_already}>
                 {postsElements}

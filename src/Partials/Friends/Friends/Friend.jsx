@@ -9,7 +9,7 @@ const Friend = (props) => {
         <div className={Snc.friends}>
             <div className={Snc.friends_list}>
                 <img src={avatar1} className={Snc.friends_avatar}></img>
-                {props.name}
+                {props.friendsName}
             </div>
         </div>
     );
