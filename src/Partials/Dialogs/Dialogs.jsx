@@ -2,7 +2,6 @@ import React from 'react';
 import Snc from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from './Message/Message';
-import {addMessageActionCreator, updateMessageActionCreator} from "../../store";
 
 const Dialogs = (props) => {
 

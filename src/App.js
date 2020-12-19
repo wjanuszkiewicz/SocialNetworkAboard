@@ -8,17 +8,20 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./Partials/News/News";
 import Settings from "./Partials/Settings/Settings";
 import DialogsContainer from "./Partials/Dialogs/DialogsContainer";
+import UsersContainer from "./Partials/Users/UsersContainer";
 
 function App(props) {
     return (
         <BrowserRouter>
             <div className="app_wrapper">
-                <Header state={props.state.friendsBar}/>
+                <Header />
                 <div className="app_content">
                     <Route path={'/Profile'}
-                           render={() => <Profile store={props.store}/>}/>
+                           render={() => <Profile />}/>
+                    <Route path={'/Users'}
+                           render={() => <UsersContainer/>}/>
                     <Route path={'/Dialogs'}
-                           render={() => <DialogsContainer store={props.store} />}/>
+                           render={() => <DialogsContainer />}/>
                     <Route path={'/News'} render={News}/>
                     <Route path={'/Settings'} render={Settings}/>
                 </div>

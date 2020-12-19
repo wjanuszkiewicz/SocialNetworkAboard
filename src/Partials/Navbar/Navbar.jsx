@@ -16,6 +16,12 @@ const Navbar = () => {
                      Profile
                  </NavLink>
              </div>
+            <div className={Snc.app_nav__item}>
+                <NavLink to="/Users" activeClassName={Snc.active} className={Snc.app_nav__button}>
+                    <img src={ProfileSvg} className={Snc.nav_icons}></img>
+                    Users
+                </NavLink>
+            </div>
              <div className={Snc.app_nav__item}>
                  <NavLink to="/Dialogs" activeClassName={Snc.active} className={Snc.app_nav__button}>
                  <img src={MessageSvg} className={Snc.nav_icons}></img>

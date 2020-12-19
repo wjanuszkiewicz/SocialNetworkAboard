@@ -8,7 +8,6 @@ const Header = (props) => {
             <a href="#" className ={Snc.logo__button}>
                  Aboard
             </a>
-            <Friends friendsNames={props.state}/>
         </header>
     );
 }

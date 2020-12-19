@@ -4,7 +4,7 @@ import Post from './Posts/Post';
 
 
 const MyPosts = (props) => {
-    let postsElements = props.posts.postsAll
+    let postsElements = props.profilePage.postsAll
         .map((post) => <Post message={post.message}/>);
 
     let newPostText = React.createRef();
